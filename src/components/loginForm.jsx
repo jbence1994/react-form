@@ -3,10 +3,6 @@ import React, { Component } from "react";
 class LoginForm extends Component {
   username = React.createRef();
 
-  componentDidMount() {
-    this.username.current.focus();
-  }
-
   handleSubmit = (e) => {
     e.preventDefault();
 
@@ -24,6 +20,7 @@ class LoginForm extends Component {
           <div className="form-group">
             <label htmlFor="username">Username</label>
             <input
+              autoFocus
               ref={this.username}
               id="username"
               type="text"
