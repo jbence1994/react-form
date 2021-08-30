@@ -1,9 +1,11 @@
+import LoginForm from "./components/loginForm";
+
 import "./App.css";
 
 const App = () => {
   return (
     <main className="container">
-      <h1>Vidly</h1>
+      <LoginForm />
     </main>
   );
 };
